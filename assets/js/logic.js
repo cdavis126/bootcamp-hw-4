@@ -17,3 +17,4 @@ const redirectPage = function (url) {
   location.assign(url);
 };
 
+
