@@ -106,10 +106,13 @@ ul {
 #back {
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  margin-right: 1rem;
+  margin-left: 0px; /* Left margin */
+  margin-right: 5.5rem; /* Space to the right */
   border: groove black;
   background-color: var(--dark-accent);
   color: var(--light);
+  position: absolute; /* Or 'fixed' */
+  right: 0; /* Align to the right */
 }
 
 

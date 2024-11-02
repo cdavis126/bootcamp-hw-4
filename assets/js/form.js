@@ -25,11 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const blogPost = { username, title, content };
 
         // Retrieve existing posts or initialize an empty array
-        const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-        blogPosts.push(blogPost); // Add the new blog post
-        localStorage.setItem('blogPosts', JSON.stringify(blogPosts)); 
-
+       /// const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+        ////blogPosts.push(blogPost); // Add the new blog post
+        ////localStorage.setItem('blogPosts', JSON.stringify(blogPosts)); 
+        storeLocalStorage(blogPost)
         // Redirect to the blog page
-        window.location.href = "blog.html"; // Simple redirect
+    
+        redirectPage("blog.html")
+        ///window.location.href = "blog.html"; // Simple redirect
     });
 });
