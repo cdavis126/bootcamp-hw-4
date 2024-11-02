@@ -99,6 +99,9 @@ main {
   color: var(--light);
 }
 
+.dark {
+  --circle-color: #9b59b6; 
+}
 
 .dark main {
   background-color: var(--dark-accent);
